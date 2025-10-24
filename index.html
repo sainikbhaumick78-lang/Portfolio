@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="style.css">
 
   <meta name="description" content="Portfolio of Sainik Bhaumick — Structural Design Engineer. AutoCAD, Revit, STAAD.Pro.">
+  <meta name="author" content="Sainik Bhaumick">
+  <meta property="og:title" content="Sainik Bhaumick — Structural Design Engineer">
+  <meta property="og:description" content="Portfolio of Sainik Bhaumick — Civil & Structural Design Engineer skilled in AutoCAD, Revit, and STAAD.Pro.">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:type" content="website">
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -72,7 +77,7 @@
               <div class="skills-mini">AutoCAD • Revit • STAAD.Pro • BOQ</div>
               <div class="profile-links">
                 <a href="SAINIK_BHAUMICK_CV.pdf" download class="small-btn">Download CV</a>
-                <a href="https://www.linkedin.com/" class="small-ghost" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/sainik-bhaumick" class="small-ghost" target="_blank" rel="noopener">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -145,61 +150,33 @@
     </section>
 
     <!-- Projects -->
-   <section id="projects">
-  <h2>My Projects</h2>
-  <div class="projects">
-    <div class="project-card" onclick="openPopup('project1')">
-      <img src="images/project1.jpg" alt="Residential planning">
-      <h3>Bridge Model Design</h3>
-      <p>Structural modeling in AutoCAD</p>
-    </div>
+    <section id="projects" class="section wrap reveal">
+      <h3 class="section-title">Projects</h3>
+      <div class="projects">
+        <!-- Project 1 -->
+        <div class="project-card modal-open" data-project="p1">
+          <img src="assets/project1.png" alt="Bridge Model Design">
+          <h3>Bridge Model Design</h3>
+          <p>Structural modeling in AutoCAD</p>
+        </div>
 
-    <div class="project-card" onclick="openPopup('project2')">
-      <img src="images/project2.jpg" alt="Building Layout">
-      <h3>Building Layout</h3>
-      <p>2D layout and detailing</p>
-    </div>
-  </div>
+        <!-- Project 2 -->
+        <div class="project-card modal-open" data-project="p2">
+          <img src="assets/project2.png" alt="Building Layout">
+          <h3>Building Layout</h3>
+          <p>2D layout and detailing</p>
+        </div>
 
-  <!-- Popup for Project 1 -->
-  <div id="project1" class="project-popup">
-    <div class="project-popup-content">
-      <span class="close-popup" onclick="closePopup('project1')">&times;</span>
-      <img src="images/project1.jpg" alt="Rsidential planning">
-      <p>AutoCAD DWG and PDF files available for reference.</p>
-      <div class="project-meta">Residential planning</div>
-            <button class="btn modal-open" data-project="project1">Open Project</button>
-      <a href="projects/bridge_model.dwg" download>Download DWG</a>
-      <a href="projects/bridge_model.pdf" download>Download PDF</a>
-    </div>
-  </div>
-
-  <!-- Popup for Project 2 -->
-  <div id="project2" class="project-popup">
-    <div class="project-popup-content">
-      <img src="images/project2.jpg" alt="Building Layout">
-      <p>Detailed building plan including beam and column placement.</p>
-      <div class="project-meta">BIM and 3d Modelling</div>
-            <button class="btn modal-open" data-project="p2">Open Project</button>
-      <a href="projects/building_layout.dwg" download>Download DWG</a>
-      <a href="projects/building_layout.pdf" download>Download PDF</a>
-    </div>
-  </div>
-</section>
-
-
-      <!-- Project 3 -->
-        <article class="project-card" data-project="p3">
+        <!-- Project 3 -->
+        <div class="project-card modal-open" data-project="p3">
           <div class="project-thumb" style="background-image:url('assets/project3.png')" aria-hidden="true"></div>
           <div class="project-body">
             <h4>Structural Analysis — STAAD.Pro</h4>
             <p>Frame modelling, load cases, M–S diagrams, and basic member checks. BBS and verification with IS codes.</p>
             <div class="project-meta">STAAD.Pro • Model & Report</div>
-            <button class="btn modal-open" data-project="p3">Open Project</button>
           </div>
-        </article>
+        </div>
       </div>
-
       <p class="muted small">Full files (DWG / RVT / STAAD) available on request or during interviews.</p>
     </section>
 
@@ -228,7 +205,7 @@
         </div>
         <div class="contact-card">
           <div class="contact-title">LinkedIn</div>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+          <a href="https://www.linkedin.com/in/sainik-bhaumick" target="_blank" rel="noopener">linkedin.com/in/sainik-bhaumick</a>
         </div>
       </div>
 
@@ -238,7 +215,7 @@
     </section>
   </main>
 
-  <!-- Project modal (reusable for all projects) -->
+  <!-- Project modal -->
   <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-label="Project details">
     <div class="modal-panel">
       <button id="modalClose" class="modal-close" aria-label="Close project">&times;</button>
@@ -251,7 +228,6 @@
   </div>
 
   <script>
-    // Projects data (images & file links). Edit these links to point to real files you upload.
     const PROJECTS = {
       p1: {
         title: "Residential G+1 — Working Drawings",
@@ -282,7 +258,6 @@
       }
     };
 
-    // Open modal
     const modal = document.getElementById('projectModal');
     const modalGallery = document.getElementById('modalGallery');
     const modalDesc = document.getElementById('modalDesc');
@@ -316,68 +291,51 @@
         ul.appendChild(li);
       });
       modalLinks.appendChild(ul);
-
       modal.setAttribute('aria-hidden','false');
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
 
     modalClose.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e)=> {
-      if(e.target === modal) closeModal();
-    });
+    modal.addEventListener('click', (e)=> { if(e.target === modal) closeModal(); });
+    function closeModal(){ modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow = ''; }
 
-    function closeModal(){
-      modal.classList.remove('open');
-      modal.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-    }
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function (e) {
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
         const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
+        if(target){
           e.preventDefault();
           const y = target.getBoundingClientRect().top + window.pageYOffset - 78;
           window.scrollTo({ top: y, behavior: 'smooth' });
-          // close mobile nav if open
           document.getElementById('navList')?.classList.remove('open');
         }
       });
     });
 
-    // Theme toggle with detection
     const themeToggle = document.getElementById('themeToggle');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const stored = localStorage.getItem('theme'); // 'dark' or 'light' or null
-    function applyTheme(t) {
-      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
-      else document.documentElement.removeAttribute('data-theme');
-      themeToggle.textContent = t === 'dark' ? '☀️' : '🌙';
+    const stored = localStorage.getItem('theme');
+    function applyTheme(t){ 
+      if(t==='dark') document.documentElement.setAttribute('data-theme','dark'); 
+      else document.documentElement.removeAttribute('data-theme'); 
+      themeToggle.textContent = t==='dark'?'☀️':'🌙'; 
     }
-    if (stored) applyTheme(stored);
-    else applyTheme(prefersDark ? 'dark' : 'light');
-    themeToggle.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      applyTheme(next);
-      localStorage.setItem('theme', next);
+    if(stored) applyTheme(stored); else applyTheme(prefersDark?'dark':'light');
+    themeToggle.addEventListener('click', ()=>{
+      const current = document.documentElement.getAttribute('data-theme')==='dark'?'dark':'light';
+      const next = current==='dark'?'light':'dark';
+      applyTheme(next); localStorage.setItem('theme',next);
     });
 
-    // mobile nav
-    document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('menuBtn').addEventListener('click', ()=>{
       document.getElementById('navList').classList.toggle('open');
     });
 
-    // reveal on scroll
     const reveals = document.querySelectorAll('.reveal');
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(ent => {
-        if (ent.isIntersecting) ent.target.classList.add('visible');
-      });
-    }, { threshold: 0.12 });
-    reveals.forEach(r => obs.observe(r));
+    const obs = new IntersectionObserver(entries=>{
+      entries.forEach(ent=>{ if(ent.isIntersecting) ent.target.classList.add('visible'); });
+    },{ threshold:0.12 });
+    reveals.forEach(r=>obs.observe(r));
   </script>
 </body>
 </html>

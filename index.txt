@@ -1,0 +1,367 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sainik Bhaumick — Structural Design Engineer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Portfolio of Sainik Bhaumick — Structural Design Engineer. AutoCAD, Revit, STAAD.Pro.">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrap header-row">
+      <div class="brand">
+        <h1>Sainik Bhaumick</h1>
+        <p class="tag">Structural Design Engineer — Design | Structure | Precision</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">??</button>
+        <a class="btn" href="SAINIK_BHAUMICK_CV.pdf" download>Download CV</a>
+        <button class="hamburger" id="menuBtn" aria-label="Open menu">?</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certs">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / profile -->
+    <section id="hero" class="hero section">
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <h2 class="intro-title">Hi — I'm <span class="accent">Sainik</span>.</h2>
+          <p class="lead">Diploma Civil Engineer transitioning into Structural & Design Engineering. I produce construction-ready drawings (AutoCAD) and BIM models (Revit) with a practical site-first approach.</p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="ghost" href="SAINIK_BHAUMICK_CV.pdf" download>Quick Resume</a>
+          </div>
+
+          <div class="meta">
+            <span><strong>Location:</strong> Barisha, Kolkata / Jharkhand</span>
+            <span>•</span>
+            <span><strong>Availability:</strong> Open to junior design roles & internships</span>
+          </div>
+
+          <div class="contact-inline">
+            <a href="mailto:sainikbhaumick78@gmail.com">sainikbhaumick78@gmail.com</a>
+            <span>•</span>
+            <a href="tel:8697712736">+91 86977 12736</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="profile-card">
+            <img src="assets/profile.jpg" alt="Sainik Bhaumick" class="profile-photo">
+            <div class="profile-info">
+              <div class="name">Sainik Bhaumick</div>
+              <div class="role">Structural Design Engineer (aspiring)</div>
+              <div class="skills-mini">AutoCAD • Revit • STAAD.Pro • BOQ</div>
+              <div class="profile-links">
+                <a href="SAINIK_BHAUMICK_CV.pdf" download class="small-btn">Download CV</a>
+                <a href="https://www.linkedin.com/" class="small-ghost" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section wrap reveal">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid">
+        <div>
+          <p>I am a Diploma Civil Engineer from Acharyya Prafulla Chandra Ray Polytechnic with hands-on site experience at SK Samanta Ltd. I’m moving into design: preparing drawings, reinforcement detailing, BIM modelling and structural checks. I bring a site-first mindset to design so drawings are constructible and efficient.</p>
+          <p>I love learning new tools and improving workflows — currently deepening Revit and STAAD.Pro skills while building a strong AutoCAD portfolio.</p>
+        </div>
+        <aside class="about-aside">
+          <table class="info-table">
+            <tr><td><strong>Nationality</strong></td><td>Indian</td></tr>
+            <tr><td><strong>DOB</strong></td><td>17 Apr 2006</td></tr>
+            <tr><td><strong>Languages</strong></td><td>Bengali, Hindi, English</td></tr>
+            <tr><td><strong>Location</strong></td><td>Barisha, Kolkata / Jharkhand</td></tr>
+          </table>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section wrap reveal">
+      <h3 class="section-title">Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h4>Design & Analysis</h4>
+          <ul>
+            <li>RCC detailing & reinforcement</li>
+            <li>Load cases & basic IS code checks (IS 456 / IS 875)</li>
+            <li>Structural analysis (STAAD.Pro)</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h4>Software</h4>
+          <ul>
+            <li>AutoCAD — 2D drafting, detail sheets</li>
+            <li>Revit — BIM modelling & sheets</li>
+            <li>STAAD.Pro — frame modelling & checks</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h4>Documentation</h4>
+          <ul>
+            <li>BOQ & BBS generation (Excel)</li>
+            <li>Construction-ready drawing packages</li>
+            <li>Site-to-design coordination</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section wrap reveal">
+      <h3 class="section-title">Experience</h3>
+      <div class="exp-block">
+        <h4>SK Samanta & Co. — Diploma Engineer Trainee (Civil)</h4>
+        <p class="muted">July 2025 — Present</p>
+        <ul>
+          <li>Prepared structural layouts and reinforcement drawings for foundations and equipment bases.</li>
+          <li>Coordinated design corrections and ensured constructability at site.</li>
+          <li>Prepared quantity estimates and supported technical documentation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section wrap reveal">
+      <h3 class="section-title">Projects (Selected)</h3>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-project="p1">
+          <div class="project-thumb" style="background-image:url('assets/p1-1.jpg')" aria-hidden="true"></div>
+          <div class="project-body">
+            <h4>Residential G+1 — Working Drawings</h4>
+            <p>Full working drawings: plans, elevations, sections and reinforcement detailing focused on constructability.</p>
+            <div class="project-meta">AutoCAD • DWG & PDF</div>
+            <button class="btn modal-open" data-project="p1">Open Project</button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-project="p2">
+          <div class="project-thumb" style="background-image:url('assets/p2-1.jpg')" aria-hidden="true"></div>
+          <div class="project-body">
+            <h4>BIM & Revit — Low-Rise Model</h4>
+            <p>3D BIM model + coordinated structural sheets to assist clash detection and site implementation.</p>
+            <div class="project-meta">Revit • RVT & Sheets</div>
+            <button class="btn modal-open" data-project="p2">Open Project</button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-project="p3">
+          <div class="project-thumb" style="background-image:url('assets/p3-1.jpg')" aria-hidden="true"></div>
+          <div class="project-body">
+            <h4>Structural Analysis — STAAD.Pro</h4>
+            <p>Frame modelling, load cases, M–S diagrams, and basic member checks. BBS and verification with IS codes.</p>
+            <div class="project-meta">STAAD.Pro • Model & Report</div>
+            <button class="btn modal-open" data-project="p3">Open Project</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="muted small">Full files (DWG / RVT / STAAD) available on request or during interviews.</p>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs" class="section wrap reveal">
+      <h3 class="section-title">Certifications & Learning</h3>
+      <div class="cert-list">
+        <span class="chip">AutoCAD — Genz Educatewing</span>
+        <span class="chip">AutoCAD Internship</span>
+        <span class="chip">BIM / Revit — Ongoing</span>
+        <span class="chip">STAAD.Pro — Beginner Course</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section wrap reveal">
+      <h3 class="section-title">Contact</h3>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-title">Email</div>
+          <a href="mailto:sainikbhaumick78@gmail.com">sainikbhaumick78@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-title">Phone</div>
+          <a href="tel:8697712736">+91 86977 12736</a>
+        </div>
+        <div class="contact-card">
+          <div class="contact-title">LinkedIn</div>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        <small>© 2025 Sainik Bhaumick • Built for structural design roles. Portfolio files available on request.</small>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project modal (reusable for all projects) -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-label="Project details">
+    <div class="modal-panel">
+      <button id="modalClose" class="modal-close" aria-label="Close project">&times;</button>
+      <div class="modal-body">
+        <div class="modal-gallery" id="modalGallery"></div>
+        <div class="modal-desc" id="modalDesc"></div>
+        <div class="modal-links" id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Projects data (images & file links). Edit these links to point to real files you upload.
+    const PROJECTS = {
+      p1: {
+        title: "Residential G+1 — Working Drawings",
+        images: ["assets/p1-1.jpg","assets/p1-2.jpg"],
+        desc: "<p>Complete set of AutoCAD working drawings (plans, elevations, sections) with reinforcement detailing and BBS.</p>",
+        files: [
+          {name:"DWG (sheets)", url:"assets/p1_drawings.dwg"},
+          {name:"PDF (printable sheets)", url:"assets/p1_sheets.pdf"}
+        ]
+      },
+      p2: {
+        title: "BIM & Revit — Low-Rise Model",
+        images: ["assets/p2-1.jpg","assets/p2-2.jpg"],
+        desc: "<p>Revit RVT model and coordinated sheets for a low-rise residential building.</p>",
+        files: [
+          {name:"RVT (model)", url:"assets/p2_model.rvt"},
+          {name:"PDF (sheets)", url:"assets/p2_sheets.pdf"}
+        ]
+      },
+      p3: {
+        title: "STAAD.Pro — Frame Analysis",
+        images: ["assets/p3-1.jpg","assets/p3-2.jpg"],
+        desc: "<p>Frame analysis, M-S diagrams and BBS generation done using STAAD.Pro and Excel.</p>",
+        files: [
+          {name:"STAAD model", url:"assets/p3_model.std"},
+          {name:"Report (PDF)", url:"assets/p3_report.pdf"}
+        ]
+      }
+    };
+
+    // Open modal
+    const modal = document.getElementById('projectModal');
+    const modalGallery = document.getElementById('modalGallery');
+    const modalDesc = document.getElementById('modalDesc');
+    const modalLinks = document.getElementById('modalLinks');
+    const modalClose = document.getElementById('modalClose');
+
+    document.querySelectorAll('.modal-open').forEach(btn=>{
+      btn.addEventListener('click', ()=> {
+        const key = btn.getAttribute('data-project');
+        openProjectModal(key);
+      });
+    });
+
+    function openProjectModal(key){
+      const p = PROJECTS[key];
+      if(!p) return;
+      modalGallery.innerHTML = '';
+      p.images.forEach(src=>{
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = p.title;
+        img.className = 'modal-img';
+        modalGallery.appendChild(img);
+      });
+      modalDesc.innerHTML = `<h3>${p.title}</h3>${p.desc}`;
+      modalLinks.innerHTML = '<strong>Files:</strong>';
+      const ul = document.createElement('ul');
+      p.files.forEach(f=>{
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${f.url}" download>${f.name}</a>`;
+        ul.appendChild(li);
+      });
+      modalLinks.appendChild(ul);
+
+      modal.setAttribute('aria-hidden','false');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e)=> {
+      if(e.target === modal) closeModal();
+    });
+
+    function closeModal(){
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const y = target.getBoundingClientRect().top + window.pageYOffset - 78;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+          // close mobile nav if open
+          document.getElementById('navList')?.classList.remove('open');
+        }
+      });
+    });
+
+    // Theme toggle with detection
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const stored = localStorage.getItem('theme'); // 'dark' or 'light' or null
+    function applyTheme(t) {
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      else document.documentElement.removeAttribute('data-theme');
+      themeToggle.textContent = t === 'dark' ? '??' : '??';
+    }
+    if (stored) applyTheme(stored);
+    else applyTheme(prefersDark ? 'dark' : 'light');
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+      localStorage.setItem('theme', next);
+    });
+
+    // mobile nav
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('navList').classList.toggle('open');
+    });
+
+    // reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(ent => {
+        if (ent.isIntersecting) ent.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(r => obs.observe(r));
+  </script>
+</body>
+</html>

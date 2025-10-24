@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,9 +22,9 @@
       </div>
 
       <nav class="site-nav" aria-label="Main navigation">
-        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">??</button>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
         <a class="btn" href="SAINIK_BHAUMICK_CV.pdf" download>Download CV</a>
-        <button class="hamburger" id="menuBtn" aria-label="Open menu">?</button>
+        <button class="hamburger" id="menuBtn" aria-label="Open menu">☰</button>
         <ul id="navList" class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -338,7 +337,7 @@
     function applyTheme(t) {
       if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
       else document.documentElement.removeAttribute('data-theme');
-      themeToggle.textContent = t === 'dark' ? '??' : '??';
+      themeToggle.textContent = t === 'dark' ? '☀️' : '🌙';
     }
     if (stored) applyTheme(stored);
     else applyTheme(prefersDark ? 'dark' : 'light');

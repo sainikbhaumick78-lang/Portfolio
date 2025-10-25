@@ -83,6 +83,27 @@ a {
   flex: 1;
   min-width: 280px;
 }
+[data-theme="dark"] {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #e0e0e0;
+  --muted: #a0a0a0;
+  --accent: #57b7a0;
+  --accent-2: #2f5fa8;
+  --shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+[data-theme="dark"] body {
+  background: var(--bg) url('assets/blueprint-bg.png') repeat;
+}
+
+[data-theme="dark"] .hero-left,
+[data-theme="dark"] .hero-right,
+[data-theme="dark"] .about-grid > div,
+[data-theme="dark"] aside.about-aside {
+  background: var(--card);
+  color: var(--text);
+}
 
 /* Profile card */
 .profile-card {
@@ -418,4 +439,57 @@ a {
   width: 100%;
   margin-bottom: 15px;
   border-radius: var(--radius);
+}
+/* ===== Dark Mode ===== */
+[data-theme="dark"] {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #e0e0e0;
+  --muted: #a0a0a0;
+  --accent: #57b7a0;
+  --accent-2: #2f5fa8;
+  --shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+[data-theme="dark"] body {
+  background: var(--bg) url('assets/blueprint-bg.png') repeat;
+}
+
+[data-theme="dark"] .hero-left,
+[data-theme="dark"] .hero-right,
+[data-theme="dark"] .about-grid > div,
+[data-theme="dark"] aside.about-aside {
+  background: var(--card);
+  color: var(--text);
+}
+
+/* ===== Project Modal ===== */
+.modal {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-panel {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+  z-index: 3000;
+}
+
+/* ===== Certificate Modal ===== */
+.cert-modal.show {
+  display: flex;
 }

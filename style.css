@@ -500,13 +500,13 @@ body:not([data-theme="dark"]) .hero-left h2.intro-title {
 }
 
 body:not([data-theme="dark"]) .hero-left p.lead {
-  font-size: 1.3rem;     /* Hero paragraph bigger */
+  font-size: 2rem;     /* Hero paragraph bigger */
   line-height: 1.6;
 }
 
 body:not([data-theme="dark"]) .hero-actions .btn,
 body:not([data-theme="dark"]) .hero-actions .ghost {
-  font-size: 1rem;       /* Buttons slightly bigger */
+  font-size: 2rem;       /* Buttons slightly bigger */
 }
 
 body:not([data-theme="dark"]) #about h3.section-title {
@@ -514,7 +514,7 @@ body:not([data-theme="dark"]) #about h3.section-title {
 }
 
 body:not([data-theme="dark"]) #about p {
-  font-size: 1.15rem;    /* About section paragraphs bigger */
+  font-size: 2rem;    /* About section paragraphs bigger */
   line-height: 1.6;
 }
 

@@ -277,3 +277,100 @@ a {
     display: block;
   }
 }
+/* ========== Dark Mode Fixes ========== */
+[data-theme="dark"] {
+  --bg: #121212;
+  --card: #1e1e2a;
+  --text: #f0f0f0;
+  --muted: #aaaaaa;
+  --accent: #4da6ff;
+  --accent-2: #57b7a0;
+  --shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+/* General text */
+[data-theme="dark"] body,
+[data-theme="dark"] p,
+[data-theme="dark"] li,
+[data-theme="dark"] td {
+  color: var(--text);
+}
+
+/* Headings */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+  color: var(--text);
+}
+
+/* Links */
+[data-theme="dark"] a {
+  color: var(--accent);
+}
+
+/* Hero section */
+[data-theme="dark"] .hero {
+  background: var(--bg);
+}
+[data-theme="dark"] .hero-left,
+[data-theme="dark"] .hero-right {
+  color: var(--text);
+}
+[data-theme="dark"] .hero-left a.btn,
+[data-theme="dark"] .hero-left a.ghost,
+[data-theme="dark"] .profile-links a {
+  color: #fff;
+}
+
+/* Cards */
+[data-theme="dark"] .profile-card,
+[data-theme="dark"] .skill-box,
+[data-theme="dark"] .exp-block,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .contact-card,
+[data-theme="dark"] .cert-modal {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+/* Section titles */
+[data-theme="dark"] .section-title {
+  color: var(--text);
+}
+
+/* Tables */
+[data-theme="dark"] .info-table td,
+[data-theme="dark"] .info-table th {
+  color: var(--text);
+  border-color: var(--muted);
+}
+
+/* Certificate gallery */
+[data-theme="dark"] .certificates-gallery a {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Footer note */
+[data-theme="dark"] .footer-note {
+  color: var(--muted);
+}
+
+/* Project modal */
+[data-theme="dark"] .modal-panel {
+  background: var(--card);
+  color: var(--text);
+}
+[data-theme="dark"] .modal a {
+  color: var(--accent);
+}
+[data-theme="dark"] .modal {
+  background: rgba(0,0,0,0.85);
+}
+
+/* Certificate modal close button */
+[data-theme="dark"] .cert-modal .close {
+  color: #fff;
+}

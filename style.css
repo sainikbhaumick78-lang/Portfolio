@@ -493,3 +493,32 @@ a {
 .cert-modal.show {
   display: flex;
 }
+/* ===== Light Mode Hero & About Font Sizes ===== */
+body:not([data-theme="dark"]) .hero-left h2.intro-title {
+  font-size: 3rem;       /* Hero heading bigger */
+  line-height: 1.2;
+}
+
+body:not([data-theme="dark"]) .hero-left p.lead {
+  font-size: 1.3rem;     /* Hero paragraph bigger */
+  line-height: 1.6;
+}
+
+body:not([data-theme="dark"]) .hero-actions .btn,
+body:not([data-theme="dark"]) .hero-actions .ghost {
+  font-size: 1rem;       /* Buttons slightly bigger */
+}
+
+body:not([data-theme="dark"]) #about h3.section-title {
+  font-size: 2rem;       /* About section title bigger */
+}
+
+body:not([data-theme="dark"]) #about p {
+  font-size: 1.15rem;    /* About section paragraphs bigger */
+  line-height: 1.6;
+}
+
+body:not([data-theme="dark"]) .about-aside td {
+  font-size: 1rem;       /* About table text bigger */
+}
+

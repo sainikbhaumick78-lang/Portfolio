@@ -3,19 +3,18 @@
   --card: #ffffff;
   --text: #17202a;
   --muted: #586069;
-  --accent: #2f5fa8; /* steel-blue */
+  --accent: #2f5fa8;
   --accent-2: #57b7a0;
   --radius: 12px;
   --shadow: 0 10px 30px rgba(30,30,30,0.1);
 }
 
-/* Civil engineering blueprint subtle background */
+/* Body & general layout */
 body {
   margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
-  background: var(--bg) url('assets/blueprint-bg.png') repeat;
   color: var(--text);
-  line-height: 1.6;
+  background: var(--bg) url('assets/blueprint-bg.png') repeat;
   background-size: 200px 200px;
 }
 
@@ -30,13 +29,7 @@ a {
   margin: 0 auto;
 }
 
-.header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
+/* Header */
 .site-header {
   background: var(--card);
   box-shadow: var(--shadow);
@@ -45,15 +38,11 @@ a {
   z-index: 1000;
 }
 
-.brand h1 {
-  margin: 0;
-  font-weight: 700;
-}
-
-.brand .tag {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--muted);
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
 }
 
 .site-nav ul {
@@ -72,31 +61,20 @@ a {
   font-weight: 500;
 }
 
-.site-nav .hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
+/* Hero */
 .hero-grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
   padding: 60px 0;
 }
 
-.hero-left {
+.hero-left, .hero-right {
   flex: 1;
+  min-width: 280px;
 }
 
-.hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
+/* Profile card */
 .profile-card {
   background: var(--card);
   padding: 20px;
@@ -112,6 +90,19 @@ a {
   object-fit: cover;
 }
 
+/* Fade-in animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skills, projects, about */
 .skills-grid,
 .projects,
 .about-grid,
@@ -130,24 +121,7 @@ a {
   box-shadow: var(--shadow);
 }
 
-.section-title {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-}
-
-/* Fade-in animation */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Certificate chips & gallery */
+/* Certificates */
 .cert-list {
   display: flex;
   flex-wrap: wrap;
@@ -218,4 +192,28 @@ a {
   text-align: center;
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-grid {
+    flex-direction: column;
+  }
+  .site-nav ul {
+    flex-direction: column;
+    display: none;
+    gap: 10px;
+    background: var(--card);
+    padding: 10px;
+    border-radius: var(--radius);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  .site-nav ul.open {
+    display: flex;
+  }
+  .site-nav .hamburger {
+    display: block;
+  }
 }

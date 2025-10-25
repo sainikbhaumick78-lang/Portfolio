@@ -630,3 +630,73 @@ body:not([data-theme="dark"]) .about-aside td {
       font-size: 0.9rem !important;
     }
   }
+/* ===== Mobile Header Fix ===== */
+@media (max-width: 768px) {
+  .site-nav ul {
+    flex-direction: column;
+    display: none;
+    gap: 10px;
+    background: var(--card);
+    padding: 15px;
+    border-radius: var(--radius);
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 200px; /* ensures menu is not too wide */
+    box-shadow: var(--shadow);
+    z-index: 1500;
+  }
+
+  .site-nav ul.open {
+    display: flex;
+  }
+
+  .site-nav .hamburger {
+    display: block;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: var(--radius);
+    cursor: pointer;
+  }
+
+  .hero-grid, .projects {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
+/* ===== Project Modal Fix for Mobile ===== */
+.modal-panel {
+  max-width: 95%;
+  width: auto;
+  margin: 20px;
+}
+
+.modal-gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.modal-desc h3 {
+  font-size: 1.5rem;
+}
+
+.modal-links a {
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Ensure modal scrolls on small screens */
+.modal.open {
+  overflow-y: auto;
+  padding: 20px 0;
+}

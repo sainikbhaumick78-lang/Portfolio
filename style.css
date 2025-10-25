@@ -374,3 +374,48 @@ a {
 [data-theme="dark"] .cert-modal .close {
   color: #fff;
 }
+/* Project Modal */
+.modal {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-panel {
+  background: var(--card);
+  color: var(--text);
+  max-width: 800px;
+  width: 90%;
+  border-radius: var(--radius);
+  padding: 20px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.modal-body img.modal-img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: var(--radius);
+}

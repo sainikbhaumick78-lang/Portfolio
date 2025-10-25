@@ -9,6 +9,16 @@
   --shadow: 0 10px 30px rgba(30,30,30,0.1);
 }
 
+/* Dark mode variables */
+[data-theme="dark"] {
+  --bg: #1e1e2f;
+  --card: #2c2c3d;
+  --text: #f0f0f0;
+  --muted: #a0a0a0;
+  --accent: #4fa3ff;
+  --accent-2: #57b7a0;
+}
+
 /* Body & general layout */
 body {
   margin: 0;
@@ -119,6 +129,56 @@ a {
   padding: 20px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+/* Projects modal fix */
+.modal {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.open {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-panel {
+  background: var(--card);
+  border-radius: var(--radius);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.modal-gallery img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: var(--radius);
 }
 
 /* Certificates */
@@ -153,10 +213,10 @@ a {
 .cert-modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
   background: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;

@@ -522,3 +522,59 @@ body:not([data-theme="dark"]) .about-aside td {
   font-size: 1rem;       /* About table text bigger */
 }
 
+/* ===== Light Mode Hero & About Font Sizes ===== */
+body:not([data-theme="dark"]) .hero-left h2.intro-title {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+body:not([data-theme="dark"]) .hero-left p.lead {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+body:not([data-theme="dark"]) .hero-actions .btn,
+body:not([data-theme="dark"]) .hero-actions .ghost {
+  font-size: 1rem;
+}
+
+body:not([data-theme="dark"]) #about h3.section-title {
+  font-size: 2rem;
+}
+
+body:not([data-theme="dark"]) #about p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+body:not([data-theme="dark"]) .about-aside td {
+  font-size: 1rem;
+}
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 768px) {
+  body:not([data-theme="dark"]) .hero-left h2.intro-title {
+    font-size: 2rem;
+  }
+
+  body:not([data-theme="dark"]) .hero-left p.lead {
+    font-size: 1.1rem;
+  }
+
+  body:not([data-theme="dark"]) .hero-actions .btn,
+  body:not([data-theme="dark"]) .hero-actions .ghost {
+    font-size: 0.9rem;
+  }
+
+  body:not([data-theme="dark"]) #about h3.section-title {
+    font-size: 1.5rem;
+  }
+
+  body:not([data-theme="dark"]) #about p {
+    font-size: 1rem;
+  }
+
+  body:not([data-theme="dark"]) .about-aside td {
+    font-size: 0.9rem;
+  }
+}

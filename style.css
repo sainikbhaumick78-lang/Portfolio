@@ -578,3 +578,55 @@ body:not([data-theme="dark"]) .about-aside td {
     font-size: 0.9rem;
   }
 }
+/* ===== Force Light Mode Hero & About Fonts ===== */
+:root[data-theme="light"], :root:not([data-theme]) {
+  /* Hero Section */
+  .hero-left h2.intro-title {
+    font-size: 3rem !important;
+    line-height: 1.2 !important;
+  }
+  .hero-left p.lead {
+    font-size: 1.3rem !important;
+    line-height: 1.6 !important;
+  }
+  .hero-actions .btn,
+  .hero-actions .ghost {
+    font-size: 1rem !important;
+  }
+
+  /* About Section */
+  #about h3.section-title {
+    font-size: 2rem !important;
+  }
+  #about p {
+    font-size: 1.15rem !important;
+    line-height: 1.6 !important;
+  }
+  .about-aside td {
+    font-size: 1rem !important;
+  }
+}
+
+/* ===== Responsive for Mobile ===== */
+@media (max-width: 768px) {
+  :root[data-theme="light"], :root:not([data-theme]) {
+    .hero-left h2.intro-title {
+      font-size: 2rem !important;
+    }
+    .hero-left p.lead {
+      font-size: 1.1rem !important;
+    }
+    .hero-actions .btn,
+    .hero-actions .ghost {
+      font-size: 0.9rem !important;
+    }
+    #about h3.section-title {
+      font-size: 1.5rem !important;
+    }
+    #about p {
+      font-size: 1rem !important;
+    }
+    .about-aside td {
+      font-size: 0.9rem !important;
+    }
+  }

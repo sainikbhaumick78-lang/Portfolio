@@ -89,9 +89,10 @@ a {
 .site-nav .btn {
   background: var(--accent);
   color: #fff;
-  padding: 8px 15px;
+  padding: 0 AUTO;
   border-radius: var(--radius);
   font-weight: 500;
+  gap: 10px;
 }
 
 /* Hero */
@@ -680,7 +681,7 @@ body:not([data-theme="dark"]) .about-aside td {
     color: #fff;
     border: none;
     font-size: 1.5rem;
-    padding: 5px 10px;
+    padding: 0 AUTO;
     border-radius: var(--radius);
     cursor: pointer;
   }
@@ -781,13 +782,13 @@ body:not([data-theme="dark"]) .about-aside td {
 
   .project-card img,
   .project-thumb {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 
   /* Ensure project modal fits screen */
   .modal-panel {
-    max-width: 95%;
+    max-width: 50%;
     width: auto;
     margin: 20px;
   }
